@@ -1,0 +1,2 @@
+# journal
+BaseKit Blog Template
