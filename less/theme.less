@@ -1,0 +1,296 @@
+// ---------------------------------
+// Trivia: CSS > Template Theme
+// ---------------------------------
+
+// 1. #HEADER & FOOTER
+// 2. #TYPOGRAPHY
+// 3. #FORMS
+// 4. #BUTTONS
+// 5. #IMAGES
+
+
+// -----------------------------
+// 1. #Header & Footer
+// -----------------------------
+
+.template-header,
+.template-footer {
+	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
+	min-height: 80px;
+	background-color: @color-swatch1;
+	// Tablet: reduce height
+}
+
+
+// Footer
+// ------
+
+.template-footer {
+	min-height: 100px;
+	background-color: @color-swatch3;
+	text-align: center;
+	color: @font-swatch9-color;
+	// Change heading elements to white
+	h1, h2, h3, h4 {
+		color: @font-swatch9-color;
+	}
+	// Lighten paragraph & link elements
+	p, a {
+		color: @font-swatch9-color;
+		padding: 0;
+	}
+	// Reset Twitter feed styles
+	.twitter-feed {
+		padding: 0;
+		background-color: transparent;
+	}
+}
+
+
+
+
+// -----------------------------
+// 2. #Typography
+// -----------------------------
+
+// Colour Swatches
+// ---------------
+
+// @color-swatch1: Background 
+// @color-swatch2: Contrast
+// @color-swatch3: Buttons
+// @color-swatch4: Headings
+// @color-swatch5: Paragraph
+// @color-swatch6: Navigation Links
+// @color-swatch7: Spare
+
+
+// Font Swatches
+// -------------
+
+// font1:  Heading 1
+// font2:  Heading 2
+// font3:  Heading 3
+// font4:  Heading 4
+// font5:  Paragraph
+// font6:  Navigation Link
+// font7:  Buttons
+// font8:  Feature Headline
+// font9:  Feature Strapline
+// font10: Company Name (Logo)
+
+
+// Standard Text Link
+// ------------------
+
+a { color: @color-swatch2; }
+
+
+// Blockquote
+// ----------
+
+blockquote:before {
+	margin-right: 10px;
+	font-size: 32px;
+	color: @color-swatch3;
+}
+
+
+// -----------------------------
+// 3. #Forms
+// -----------------------------
+
+// Form
+// ----------
+
+form, .form {
+    background-color: @color-swatch1;
+    @media @tablet {
+        text-align: center;
+    }
+}
+
+// Form Body
+.form-body {
+	margin: 10px 0 20px;
+	@media @mobile {
+		margin: 20px;
+	}
+}
+
+// Form Group
+.form-group { 
+	margin-bottom: 20px;
+	@media @mobile {
+		margin-bottom: 10px;
+	}
+}
+
+.signupform__input, 
+.signupform__input, 
+.blogsearch__input,
+.ecomproductslist__input  {
+    border: 1px solid @color-swatch7!important;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+// Legend
+// ----------
+
+legend { 
+	width: 100%;
+	background-color: @color-swatch1;
+	color: @font-swatch4-color;
+}
+
+// Select
+// ----------
+
+select {
+    height: 36px;
+    outline: none;
+    border: 1px solid darken(@color-swatch1,10%);
+    border-radius: 0;
+    background-color: @color-swatch1;
+    font-size: 12px;
+    text-indent: 0;
+    &:hover, &:focus {
+        background-color: @color-swatch1;
+        cursor: pointer;
+	}
+}
+
+.signupform__legend {
+    display: none;
+}
+
+// Inputs: Text
+// ------------
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+    border: 0;
+    border-bottom: 1px solid @color-swatch7;
+    -webkit-appearance: none;
+    &:focus {
+        border: 0;
+        box-shadow: none;
+        outline: none;
+        border-bottom: 1px solid @color-swatch4;
+    }
+}
+
+.signupform__form-group input.input[type=email] {
+    border: 1px solid @color-swatch7!important;
+}
+
+.signupform__label, .contactform__legend, .blogsearch__legend {
+    background-color: @color-swatch1;
+    border-bottom: 0;
+    font-size: @font-swatch3-font-size;
+    font-weight: @font-swatch3-font-weight;
+    margin-bottom: 10px;
+}
+
+.signupform__fieldset {
+    @media @mobile {
+        text-align: left;
+    }
+}
+
+.signupform__form-group:nth-child(1),
+.blogsearch__form-group:nth-child(1) {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height 40px;
+    @media @mobile {
+        width: 100%;
+        float: initial;
+        display: block;
+    }
+}
+
+.signupform__form-group:nth-child(2),
+.blogsearch__form-group:nth-child(2) {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    margin-top: 37px;
+    text-align: left;
+    margin-left: 5px;
+    @media @mobile {
+        width: 100%;
+        float: initial;
+        display: block;
+        margin-top: 0;
+    }
+}
+
+.blogsearch__form-group:nth-child(2) {
+    margin-top: 0;
+}
+
+.contactform__legend {
+    margin-bottom: 0;
+}
+
+.signupform__input {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    .button--submit {
+        display: inline-block;
+        float: right;
+        min-width: 20%;
+        vertical-align: bottom;
+        margin-top: 21px;
+    }
+}
+
+.signupform__form-group {
+    .clearfix
+}
+
+
+
+
+// -----------------------------
+// 4. #Buttons
+// -----------------------------
+
+button, .button, .blogpostlist__read-more {
+    padding: 5px 30px;
+    background-color: transparent;
+    border: 1px solid @color-swatch7;
+    color: @font-swatch7-color;
+    border-radius: 20px;
+}
+
+
+
+
+// -----------------------------
+// 5. #Images
+// -----------------------------
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+	color: @color-swatch1;
+}
+
+// Image Widget
+.image-widget__caption { margin: 10px 0; }
+.image-widget__image-title,
+.image-widget__image-description {
+	color: @font-swatch5-color;
+	text-shadow: none;
+}

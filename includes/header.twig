@@ -1,0 +1,19 @@
+<!-- Header -->
+<header>
+    <div class="homepage-feature">
+        <div class="company-header">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+        {{widget('feature', 'featurehome', {
+            "header": "profile", 
+            "defaultBgImg": asset('images/feature-bg.jpg'),
+            'positionTopPercentage': '0',
+            'showBtn': true,
+            buttonText: "Lorem Ipsum"
+        })|raw}}
+        {% include "includes/footer.twig" %}
+    </div>
+</header>
+
+<!-- End Header -->

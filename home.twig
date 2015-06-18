@@ -1,0 +1,37 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<div class="right-section">
+	<div class="container">
+		<div class="navigation-container">
+			<div class="navigation">
+			    {{widget('extendednavigation', 'extendednavigation', {"align":"left"})|raw}}
+			</div>
+			    <div class="navigation-widget-profile">
+			    	{{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+			    </div>
+			</div>
+			
+			<!-- Container -->
+			
+				<!-- Page Content -->
+				<section class="template-content">
+			
+					<!-- Template Widgets -->
+					
+					<!-- End Template Widgets -->
+			
+					<!-- Main Widet Zone -->
+				   	{{zone('main')|raw}}
+			
+				</section>
+				<!-- End Page Content -->
+			
+			<!-- End Container -->
+		</div>
+</div>
+	
+{% endblock %}

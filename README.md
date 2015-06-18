@@ -1,2 +1,4 @@
-# journal
+Journal
+=========
+
 BaseKit Blog Template
