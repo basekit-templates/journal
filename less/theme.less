@@ -142,6 +142,28 @@ legend {
 	width: 100%;
 	background-color: @color-swatch1;
 	color: @font-swatch4-color;
+    &:before {
+        position: absolute;
+        width: 38px;
+        border-bottom: 4px solid #E4E4E4;
+        margin-top: 32px;
+        color: #00aced;
+        content: "";
+    }
+}
+
+.signupform__label,
+.blogsearch__legend,
+.ecomproductslist__listing-title,
+.ecomfeaturedproducts__listing-title {
+        &:before {
+        position: absolute;
+        width: 38px;
+        border-bottom: 4px solid #E4E4E4;
+        margin-top: 32px;
+        color: #00aced;
+        content: "";
+    }
 }
 
 // Select
@@ -193,7 +215,11 @@ textarea,
     border-bottom: 0;
     font-size: @font-swatch3-font-size;
     font-weight: @font-swatch3-font-weight;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    &:after {
+        content"";
+        border: 5px solid @color-swatch7;
+    }
 }
 
 .signupform__fieldset {
@@ -220,7 +246,7 @@ textarea,
     display: inline-block;
     float: left;
     width: 40%;
-    margin-top: 37px;
+    margin-top: 57px;
     text-align: left;
     margin-left: 5px;
     @media @mobile {
