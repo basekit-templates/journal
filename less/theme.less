@@ -153,16 +153,34 @@ legend {
 }
 
 .signupform__label,
-.blogsearch__legend,
-.ecomproductslist__listing-title,
-.ecomfeaturedproducts__listing-title {
+.blogsearch__legend {
         &:before {
         position: absolute;
-        width: 38px;
+        width: 118px;
         border-bottom: 4px solid #E4E4E4;
         margin-top: 32px;
         color: #00aced;
         content: "";
+    }
+}
+
+.signupform__label {
+    &:before {
+        width: 130px;
+    }
+}
+
+.contactform__legend {
+    &:before {
+        width: 110px;
+    }
+}
+
+.widget__profile {
+    .signupform__label {
+        &:before {
+            width: 110px;
+        }
     }
 }
 
