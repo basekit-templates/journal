@@ -157,8 +157,12 @@
     padding: 5px 15px;
 }
 
-.menu__dietary-list {
-    padding: 0px 15px 10px;
+.menu__dietary-item {
+    padding: 0 0 10px 15px;
+}
+
+.dietary-item {
+    margin-right: 0;
 }
 
 .menu-item--featured .menu__item-content,
@@ -172,6 +176,16 @@
 
 .menu-item--featured .item-image + .item-content {
     width: 100%;
+}
+
+.menu-section--subsection .menu__item-price:before {
+    position: absolute;
+    width: 38px;
+    border-bottom: 4px solid #E4E4E4;
+    margin-top: 32px;
+    color: #00aced;
+    content: "";
+    right: 0px;
 }
 
 // Menu Navigation
@@ -273,7 +287,6 @@
 
 
 // Featured Section
-
 .menu-section--featured .menu__item-price:before {
   position: absolute;
   width: 38px;

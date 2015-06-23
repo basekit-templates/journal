@@ -10,7 +10,7 @@
 // 2. #PRODUCT LIST
 // 3. #BASKET WIDGET
 // 4. #BASKET SUMMARY
-// 5. #Basket Filters
+// 5. #BASKET FILTERS
 
 
 // -------------------------------
@@ -23,25 +23,45 @@
     .clearfix
 }
 
-.ecomproduct__legend {
-    width: initial;
-    margin-bottom: 20px;
-    &:before {
-        position: absolute;
-        width: 122px;
-        border-bottom: 4px solid #E4E4E4;
-        margin-top: 32px;
-        color: #00aced;
-        content: "";
+.ecomproduct {
+    .legend {
+        width: initial;
+        margin-bottom: 20px;
+        &:before {
+            position: absolute;
+            width: 122px;
+            border-bottom: 4px solid #E4E4E4;
+            margin-top: 32px;
+            color: #00aced;
+            content: "";
+        }
+    }
+    .product-header {
+        border-bottom: 6px solid @color-swatch7;
+        margin-bottom: 20px;
+    }
+    .product-body {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    .product-actions {
+        float: right;
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+        border: 3px solid @color-swatch7;
+        padding: 20px;
+    }
+    .product-attributes {
+        display: inline-block;
     }
 }
 
 .product-content {
     padding: 0 0 0 2%;
     display: inline-block;
-    width: 50%;
     @media @tablet {
-        width: 100%;
         padding: 0;
         margin-top: 20px;
     }
@@ -55,24 +75,12 @@
 }
 
 .product-images {
-    width: 50%;
     float: left;
     padding: 0 2% 0 0;
-    @media @tablet {
-        width: 100%;
-    }
 }
 
 .product-item-details {
     margin: 20px 0px;
-}
-
-.ecomproductslist__listing-title {
-    border-bottom: 6px solid @color-swatch7;
-    display: inline-block;
-    &:after {
-        margin: 20px auto 15px;
-    }
 }
 
 .ecomproduct__image-link {
@@ -126,6 +134,11 @@
     padding: 8px 37px 8px 36px;
 }
 
+.ecomproduct__message {
+    margin: 10px 0 20px;
+}
+
+
 
 // -----------------------------
 // 2. #Product List
@@ -142,7 +155,6 @@
 }
 
 // Product Item
-
 .title-link {
     &:hover {
         text-decoration: none;
@@ -211,6 +223,9 @@
     background-color: @color-swatch3;
     color: @font-swatch9-color;
 }
+
+
+
 
 // -----------------------------
 // 3. #Basket Widget
@@ -329,6 +344,8 @@
 
 .ecomproductslist__legend {
     padding: 10px 0 10px;
+    border-bottom: 6px solid @color-swatch7;
+    width: 90%;
     &:before {
         display: none;
     }
