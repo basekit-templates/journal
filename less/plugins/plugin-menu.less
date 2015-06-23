@@ -76,12 +76,10 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    width: 50%;
-    border: 5px solid @color-swatch7;
-    padding: 10px;
+    box-shadow: inset 0 0 0 3px @color-swatch7;
 }
 
-// Eco Post Flexbox
+// Menu Content
 .menu__item-article {
     display: -webkit-box;
     display: -moz-box;
@@ -129,6 +127,9 @@
     align-self: auto;
     width: 30%;
     margin-right: 20px;
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .menu__item-content {
@@ -148,13 +149,25 @@
     width: 100%;
 }
 
+.menu__item-subtitle {
+    padding: 10px 15px 0;
+}
+
+.menu__item-details {
+    padding: 5px 15px;
+}
+
+.menu__dietary-list {
+    padding: 0px 15px 10px;
+}
+
 .menu-item--featured .menu__item-content,
 .menu-item--featured .menu__item-image {
     width: 100%;
 }
 
 .item-image + .item-content {
-    width: 67%;
+    width: 66%;
 }
 
 .menu-item--featured .item-image + .item-content {
