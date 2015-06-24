@@ -23,7 +23,7 @@
             "color2":"#7ED1C5",
             "color3":"#7ED1C5",
             "color4":"#000000",
-            "color5":"#2b3040",
+            "color5":"#7b7b7b",
             "color6":"#ffffff",
             "color7":"#E4E4E4"
         },
@@ -100,7 +100,7 @@
         },
         "font5": {
             "font-family": "\"Merriweather\", Georgia, serif",
-            "font-size": "15px",
+            "font-size": "14px",
             "font-weight": "300",
             "line-height": "28px",
             "color": "@color-swatch4",
