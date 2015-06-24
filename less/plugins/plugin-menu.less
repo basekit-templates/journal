@@ -126,11 +126,6 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    width: 30%;
-    margin-right: 20px;
-    @media @mobile {
-        width: 100%;
-    }
 }
 
 .menu__item-content {
@@ -160,7 +155,7 @@
 }
 
 .menu__dietary-item {
-    padding: 0 0 10px 15px;
+    padding: 10px;
 }
 
 .dietary-item {
@@ -170,13 +165,6 @@
 .menu-item--featured .menu__item-content,
 .menu-item--featured .menu__item-image {
     width: 100%;
-}
-
-.item-image + .item-content {
-    width: 66%;
-    @media @tablet {
-        width: 100%;
-    }
 }
 
 .menu-item--featured .item-image + .item-content {
@@ -329,7 +317,7 @@
 
 // Section Footer
 .menu__section-footer {
-    border: 1px solid @color-swatch7;
+    background-color: @color-swatch1;
     padding: 10px 10px 0px;
     margin-bottom: 10px;
 }
