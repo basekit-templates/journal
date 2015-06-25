@@ -944,6 +944,9 @@ input.input[type=search],
     .socialicons__social-item:hover {
         background-color: black!important;
     }
+    .twitter__avatar {
+        display: none;
+    }
     .icon--facebook {
         background-color: #3b5998;
                 &:before {
@@ -992,7 +995,7 @@ input.input[type=search],
 // Body
 .widget__twitter {
     background-color: @color-swatch1;
-    margin-top: 50px;
+    margin-top: 60px;
     &:before {
         content: "\f099";
         font-family: fontawesome;
@@ -1022,7 +1025,8 @@ input.input[type=search],
 // Content
 .twitter__avatar {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 2%;
+    width: 80px;
     @media @mobile {
         margin: 0px auto 20px;
         display:table;
@@ -1037,7 +1041,7 @@ input.input[type=search],
 .twitter__tweet-wrap {
     display:inline-block;
     vertical-align: top;
-    margin-top: 10px;
+    width: 80%;
     @media @tablet {
         max-width: 320px;
     }
