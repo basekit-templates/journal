@@ -588,6 +588,8 @@
 }
 
 
+
+
 // -----------------------------
 // 7.  #Slideshow
 // ----------------------------- 
@@ -677,8 +679,13 @@
 }
 
 .responsiveslideshow__pause-toggle {
+    height: 40px;
+    top: 180px;
+    background-color: @color-swatch3;
+    border: 0; 
     &:before {
         margin-right: 0;
+        color: @font-swatch10-color;
     }
 }
 
@@ -696,11 +703,19 @@
     vertical-align: top;
     padding: 5px 20px;
     margin-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    &:hover {
+        background-color: transparent;
+        border-bottom: 4px solid @color-swatch7;
+        color: @font-swatch4-color;
+    }
 }
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
-    background-color: @color-swatch3;
-    color: @font-swatch8-color;
+    background-color: transparent;
+    color: @font-swatch7-color;
+    border-bottom: 4px solid @color-swatch7;
 }
 
 
@@ -789,10 +804,7 @@
     border: 0;
 }
 
-.responsiveslideshow__pause-toggle {
-  height: 40px;
-  top: 180px;
-}   
+
 
 
 // -----------------------------
@@ -970,6 +982,9 @@ input.input[type=search],
     }
 }
 
+
+
+
 // -----------------------------
 // 12.  #Twitter Feed
 // -----------------------------
@@ -977,7 +992,7 @@ input.input[type=search],
 // Body
 .widget__twitter {
     background-color: @color-swatch1;
-    border: 2px solid @color-swatch7;
+    margin-top: 50px;
     &:before {
         content: "\f099";
         font-family: fontawesome;
@@ -986,8 +1001,8 @@ input.input[type=search],
         height: 50px;
         right: 0;
         top: 0;
-        border: 2px solid @color-swatch7;
-        margin-top: -48px;
+        border: 1px solid @color-swatch7;
+        margin-top: -49px;
         font-size: 20px;
         padding: 10px 14px;
         color: #00aced;
@@ -1014,6 +1029,11 @@ input.input[type=search],
     }
 }
 
+.twitter__account-link {
+    padding-bottom: 10px;
+    border-bottom: 4px solid @color-swatch7;
+}
+
 .twitter__tweet-wrap {
     display:inline-block;
     vertical-align: top;
@@ -1025,19 +1045,24 @@ input.input[type=search],
         font-weight: @font-swatch1-font-weight;
     }
     p {
-        padding-bottom:0;
+        padding-bottom: 0;
+        margin-top: 20px;
     }
 }
 
 .twitter__tweet-item {
-    margin: 0;
     line-height: 0;
+    padding: 20px;
+    border: 1px solid @color-swatch7;
+    margin-bottom: 20px;
 }
 
 // Image
 .twitter__avatar-image {
     height: 9vh;
 }
+
+
 
 
 // -----------------------------

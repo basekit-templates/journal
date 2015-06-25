@@ -37,7 +37,7 @@
         }
     }
     .product-header {
-        border-bottom: 6px solid @color-swatch7;
+        border-bottom: 4px solid @color-swatch7;
         margin-bottom: 20px;
         float: left;
         display: inline-block;
@@ -60,7 +60,7 @@
         display: inline-block;
         width: 30%;
         margin: 0;
-        border: 3px solid @color-swatch7 ;
+        border: 1px solid @color-swatch7;
         padding: 20px;
         margin: 0 0 0 2%;
         @media @tablet {
@@ -210,6 +210,8 @@
 }
 
 .ecomproductslist__listing-title {
+    display: inline-block;
+    border-bottom: 4px solid @color-swatch7;
     @media @mobile {
         text-align: center;
     }
@@ -363,6 +365,12 @@
     border: 1px solid @color-swatch7;
 }
 
+.ecombasketsummary__summary-title {
+    border-bottom: 4px solid @color-swatch7;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
 .ecombasketsummary__summary-form {
     border: 0;
 }
@@ -371,7 +379,30 @@
     max-width: 140px;
 }
 
+.ecombasketsummary__quantity-wrap {
+    background-color: @color-swatch1;
+}
 
+.ecombasketsummary__summary-table {
+   border:0!important;
+}
+
+.ecombasketsummary__table-row:nth-child(1) {
+    border-bottom: 1px solid @color-swatch7;
+}
+
+.ecombasketsummary__cell {
+    padding: 25px 12px;
+    background-color: transparent;
+    border: 0;
+}
+
+.ecombasketsummary__order-total {
+    display: inline-block;
+    border-bottom: 4px solid @color-swatch7;
+    padding: 5px;
+    border-top: 5px solid @color-swatch7;
+}
 
 
 // -------------------------------
@@ -402,12 +433,7 @@
 }
 
 .ecomproductslist__legend {
-    padding: 10px 0 10px;
-    border-bottom: 6px solid @color-swatch7;
-    width: 90%;
-    &:before {
-        display: none;
-    }
+    display: none;
 }
 
 .ecomproductslist__fieldset--search .ecomproductslist__legend {
@@ -434,7 +460,7 @@
 }
 
 .ecomproductslist__button {
-    padding: 3px 30px;
+    padding: 6px 30px;
 }
 
 // Clear Search Button
