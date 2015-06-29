@@ -655,7 +655,7 @@
 .slide-navigation {
     position: absolute;
     width: 100%;
-    top: 0;
+    bottom: 43px;
     margin-top: 0;
 }
 
@@ -680,9 +680,10 @@
 
 .responsiveslideshow__pause-toggle {
     height: 40px;
-    top: 180px;
+    top: -130px;
     background-color: @color-swatch3;
-    border: 0; 
+    border: 0;
+    border-radius: 0;
     &:before {
         margin-right: 0;
         color: @font-swatch10-color;
@@ -797,9 +798,9 @@
 
 .responsiveslideshow__next-button, 
 .responsiveslideshow__previous-button {
-    background-color: fade(@color-swatch4, 15%);
-    color: @font-swatch8-color;
-    height: 400px;
+    background-color: rgba(0,0,0,0.15);
+    color: @color-swatch1;
+    height: 76px;
     border-radius: 0;
     border: 0;
 }
@@ -869,14 +870,16 @@ input.input[type=search],
 
 .socialicons__social-item {
   border: 1px solid @color-swatch7;
-  padding: 0 20px;
   border-radius: 20px;
+  padding: 0 10px;
 }
 
 .socialicons__social-item:hover {
-    color: @font-swatch9-color;
     text-decoration: none;
-    background-color: lighten(@color-swatch7,10%);
+    background-color: red;
+    span {
+        color: @font-swatch9-color;
+    }
 }
 
 .socialicons__social-item a:hover {
@@ -888,7 +891,7 @@ input.input[type=search],
 .social-social-link {
     border-radius: 30px;
     padding: 7px 12px;
-    color: @font-swatch10-color;
+    color: @font-swatch6-color;
     font-size: @font-swatch7-font-size;
     display: inline-block;
 }
@@ -931,49 +934,40 @@ input.input[type=search],
 
 
 //Widget Profile Social Icons
-.widget__profile {
-    .socialicons__social-item a:hover {
-        color: @font-swatch9-color!important;
-        text-decoration: none;
-        background-color: red;
-    }
+.navigation-widget-profile {
     .socialicons__social-item {
-        border: 0;
         padding: 0;
     }
-    .socialicons__social-item:hover {
-        background-color: black!important;
-    }
-    .twitter__avatar {
-        display: none;
+    .social-social-link {
+        color: @font-swatch9-color;
     }
     .icon--facebook {
         background-color: #3b5998;
-                &:before {
+        &:before {
             color: @font-swatch10-color;
         }
     }   
     .icon--twitter {
         background-color: #00aced;
-                &:before {
+        &:before {
             color: @font-swatch10-color;
         }
     }
     .icon--googleplus {
         background-color: #dd4b39;
-                &:before {
+        &:before {
             color: @font-swatch10-color;
         }
     }
     .icon--linkedin {
         background-color: #007bb6;
-                &:before {
+        &:before {
             color: @font-swatch10-color;
         }
     }
     .icon--rss {
         background-color: #FF6600;
-                &:before {
+        &:before {
             color: @font-swatch10-color;
         }
     }
@@ -1047,6 +1041,7 @@ input.input[type=search],
     }
     a {
         font-weight: @font-swatch1-font-weight;
+        line-height: @font-swatch2-line-height;
     }
     p {
         padding-bottom: 0;
@@ -1063,7 +1058,7 @@ input.input[type=search],
 
 // Image
 .twitter__avatar-image {
-    height: 9vh;
+    height: 7vh;
 }
 
 
@@ -1083,13 +1078,16 @@ input.input[type=search],
 // -----------------------------
 
 .feature-footer {
-    p, a {
+    h1, h2, h3, h4, p, a, .twitter__timestamp, .twitter-feed__via {
         color: @font-swatch10-color;
     }
     .twitter {
         background-color: transparent;
         border: 0;
         padding: 10px 30px 0px;
+    }
+    .twitter__tweet-item {
+        border: 0;
     }
     .map__embed-wrap {
         min-width: 400px;
@@ -1098,8 +1096,10 @@ input.input[type=search],
         }
     }
     .twitter__avatar {
-        margin: 0px auto 10px;
-        display: table;
+        display: none;
+    }
+    .profile__map {
+        margin: 0px 20px;
     }
     .signupform__input {
         width: 100%;
@@ -1145,6 +1145,9 @@ input.input[type=search],
 }
 
 .navigation-widget-profile {
+    .signupform__form {
+        .clearfix;
+    }
     .signupform__form-group:nth-child(1) {
         width: 65%;
         @media screen and (max-width: 1024px) {
