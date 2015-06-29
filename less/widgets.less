@@ -1147,12 +1147,28 @@ input.input[type=search],
 .navigation-widget-profile {
     .signupform__form-group:nth-child(1) {
         width: 65%;
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+    .signupform__form-group:nth-child(2) {
+        width: 33%;
+        margin-top: 57px;
+         @media screen and (max-width: 1024px) {
+            width: 100%;
+        }
     }
     .signupform__label {
         text-align: left;
+        @media screen and (max-width: 1024px) {
+            text-align: center;
+        }
     }
     .signupform__fieldset {
         float: right;
+        @media screen and (max-width: 1024px) {
+            float: initial;
+        }
     }
 }
 
