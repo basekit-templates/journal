@@ -203,7 +203,7 @@ select {
 	}
 }
 
-.signupform__legend {
+.signupform__label {
     display: none;
 }
 
@@ -242,6 +242,10 @@ textarea,
     }
 }
 
+.blogsearch__legend {
+    margin-bottom: 0;
+}
+
 .signupform__fieldset {
     @media @mobile {
         text-align: left;
@@ -261,12 +265,16 @@ textarea,
     }
 }
 
+.blogsearch__form-group:nth-child(1)
+.blogsearch__form-group:nth-child(2) {
+    margin-top: 10px;
+}
+
 .signupform__form-group:nth-child(2),
 .blogsearch__form-group:nth-child(2) {
     display: inline-block;
     float: left;
     width: 40%;
-    margin-top: 57px;
     text-align: left;
     margin-left: 5px;
     @media @mobile {
