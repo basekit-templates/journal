@@ -1086,86 +1086,6 @@ input.input[type=search],
 // 14. #Profile
 // -----------------------------
 
-.feature-footer {
-    h1, h2, h3, h4, p, a, .twitter__timestamp, .twitter-feed__via {
-        color: @font-swatch10-color;
-    }
-    .twitter {
-        background-color: transparent;
-        border: 0;
-        padding: 10px 30px 0px;
-    }
-    .twitter__tweet-item {
-        border: 0;
-    }
-    .map__embed-wrap {
-        min-width: 400px;
-        @media @mobile {
-            min-width: 280px;
-        }
-    }
-    .twitter__avatar {
-        display: none;
-    }
-    .profile__map {
-        margin: 0px 20px;
-    }
-    .signupform__input {
-        width: 40%;
-        text-align: center;
-    }
-    .signupform__legend {
-        padding: 0;
-        color: @font-swatch9-color;
-        background-color: transparent;
-        font-size: @font-swatch3-font-size;
-        &:after {
-            margin: 10px auto 10px;
-        }
-    }
-    .signupform__form-body {
-        margin: 20px auto 0px;
-        @media @mobile {
-            margin: 20px auto 10px;
-        }
-    }
-    .profile__signupform {
-        min-width: 400px;
-        @media @tablet {
-            margin: 10px 0;
-        }
-        @media @mobile {
-            min-width: 250px;
-            max-width: 280px;
-            margin: 0px auto;
-        }
-    }
-    .socialicons__social-item a:hover {
-        border: 0;
-    }
-    input.input[type=email], 
-    input.input[type=search], 
-    .contact-form__textarea {
-        color: @font-swatch5-color;
-    }
-    .signupform__form,
-    .signupform__legend {
-        background-color: transparent;
-    }
-    .signupform__form-group:nth-child(2) {
-        margin-top: 10px;
-        text-align: center;
-        float: initial;
-    }
-    .signupform__form-group:nth-child(1) {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
-
-.companyaddress__address-line {
-    display: inline-block;
-}
 
 .navigation-widget-profile {
     .signupform__form {
@@ -1179,7 +1099,6 @@ input.input[type=search],
     }
     .signupform__form-group:nth-child(2) {
         width: 33%;
-        margin-top: 57px;
          @media screen and (max-width: 1024px) {
             width: 100%;
             margin-top: 0;
@@ -1205,6 +1124,9 @@ input.input[type=search],
     margin-top: 10px;
 }
 
+.companyaddress__address-line {
+    display: inline-block;
+}
 
 // -----------------------------
 // 15. #Facebook
