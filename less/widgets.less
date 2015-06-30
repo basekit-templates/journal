@@ -1009,9 +1009,6 @@ input.input[type=search],
         padding: 10px 14px;
         color: #00aced;
     }
-    @media @tablet {
-        padding: 20px;
-    }
     @media @mobile {
         text-align: center;
     }
@@ -1027,8 +1024,7 @@ input.input[type=search],
     margin-right: 2%;
     width: 80px;
     @media @mobile {
-        margin: 0px auto 20px;
-        display:table;
+        display: none;
     }
 }
 
@@ -1143,6 +1139,17 @@ input.input[type=search],
     .contact-form__textarea {
         color: @font-swatch5-color;
     }
+    .signupform__form,
+    .signupform__label {
+        background-color: transparent;
+    }
+    .signupform__form-group:nth-child(2) {
+        margin-top: 0;
+        text-align: center;
+    }
+    .signupform__form-group:nth-child(1) {
+        width: 100%;
+    }
 }
 
 .companyaddress__address-line {
@@ -1164,6 +1171,8 @@ input.input[type=search],
         margin-top: 57px;
          @media screen and (max-width: 1024px) {
             width: 100%;
+            margin-top: 0;
+            text-align: center;
         }
     }
     .signupform__label {

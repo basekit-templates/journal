@@ -3,16 +3,15 @@
     "thumbnail":"journal.png",
     "screenshot":"journal-screenshot.jpg",
     "tags": {
-        "en": ["business", "corporate", "company", "corporation", "professional", "minimal", "clean", "simple"],
-        "es": ["negocios", "corporativo", "empresa", "corporativo", "profesional", "minimalista", "limpio", "simple"],
-        "pt": ["negócio", "corporativo", "companhia", "corporação", "eleição", "profissional", "minimalista", "limpo", "simples"]
+        "en": ["blog", "journal", "diary"],
+        "es": ["el blog", "revista", "diario"],
+        "pt": ["blog", "jornal", "diário"]
     },
     "pageTypes":["home"],
-    "templateType":"standard",
+    "templateType":"blog",
     "widgetVersion":2,
     "images":[
         "images/feature-bg.jpg",
-        "images/feature-default.jpg",
         "images/logo.png",
         "images/image-1.jpg"
     ],
