@@ -103,10 +103,7 @@
     z-index: 9999;
     width: 100%;
     text-align: center;
-    margin-top: 40px;
-    @media @mobile {
-        margin-top: 20px;
-    }
+    padding: 20px;
 }
 
 .company-name {
@@ -854,6 +851,9 @@ input.input[type=search],
         margin-top: 32px;
         content: "";
     }
+    @media @tablet {
+        text-align: center;
+    }
 }
 
 .signupform__input {
@@ -1117,6 +1117,9 @@ input.input[type=search],
             float: initial;
         }
     }
+    .twitter__avatar {
+        display: none;
+    }
 }
 
 .signupform__form-group:nth-child(1),
@@ -1142,6 +1145,16 @@ input.input[type=search],
 // -----------------------------
 // 16. Yelp
 // -----------------------------
+
+.yelpreview__yelp-title {
+    border-bottom: 4px solid @color-swatch7;
+    display: inline-block;
+}
+
+.yelpreview__review-list {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
 
 .yelp-reviews__review-title {
     font-size: @font-swatch4-font-size;
