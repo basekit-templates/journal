@@ -253,12 +253,13 @@
 // --------------------
 
 .feature__content-wrap {
-    text-align:center;
+    text-align: center;
     max-width: 80%;
     vertical-align: middle;
     display: table-cell;
-    background-color: fade(@color-swatch4, 50%);
     height: 1000px;
+    position: relative;
+    z-index: 999;
     @media screen and (max-width: 1024px) {
         height: 650px;
     }
@@ -267,17 +268,26 @@
     }
 }
 
+.feature__background-image {
+    &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        content:"";
+        background-color: fade(@color-swatch4, 50%);
+        display: block;
+    }
+}
 
 // Feature Content
 // ---------------
 
 .feature__headline {
-    max-width: 70%;
-    margin: 0px auto;
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.8);
-        max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.7);
@@ -286,12 +296,9 @@
 }
 
 .feature__strapline {
-    max-width: 70%;
-    margin: 0px auto;
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.9);
-        max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch9-font-size,0.8);
@@ -862,6 +869,7 @@ input.input[type=search],
 .signupform__legend {
     padding: 0;
     font-size: @font-swatch3-font-size;
+    text-align: left;
     &:before {
         position: absolute;
         width: 82px;
@@ -1049,6 +1057,7 @@ input.input[type=search],
     display: inline-block;
     margin-right: 2%;
     width: 80px;
+    margin-bottom: 10px;
 }
 
 .twitter__account-link {
