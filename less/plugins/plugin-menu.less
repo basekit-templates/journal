@@ -168,7 +168,7 @@
 }
 
 .menu__dietary-item {
-    padding: 0 0 10px 15px;
+    padding: 10px 0 10px 15px;
 }
 
 .dietary-item {
@@ -180,6 +180,10 @@
     width: 100%;
 }
 
+.menu__section-subtitle {
+    font-size: @font-swatch4-font-size;
+}
+
 .item-image + .item-content {
     width: 66%;
     @media @tablet {
@@ -188,14 +192,6 @@
 }
 
 // Menu Navigation
-.widget__menusections {
-	border-bottom: 4px solid @color-swatch7;
-	text-align: left;
-    margin-bottom: 20px;
-    @media @mobile {
-        display: none;
-    }
-}
 
 .menusections-list {
     margin: 10px 0;
@@ -245,6 +241,9 @@
 .menu__item-title {
     width: 90%;
     display: inline-block;
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .menu__item-price {
@@ -252,6 +251,10 @@
     display: inline-block;
     float: right;
     text-align: right;
+    @media @mobile {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .item-content {
@@ -285,6 +288,9 @@
 // Item Image
 .menu .item-image .image-link {
     background-color: @color-swatch1;
+    @media @mobile {
+        line-height: 100%;
+    }
 }
 
 // Featured Section

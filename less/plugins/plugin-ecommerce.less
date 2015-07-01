@@ -41,14 +41,13 @@
         margin-bottom: 20px;
         float: left;
         display: inline-block;
-        width: 68%;
+        width: 100%;
         @media @tablet {
             width: 100%;
         }
     }
     .product-body {
         display: inline-block;
-        float: left;
         width: 68%;
         clear: left;
         @media @tablet {
@@ -63,13 +62,13 @@
         border: 1px solid @color-swatch7;
         padding: 20px;
         margin: 0 0 0 2%;
+        float: right;
         @media @tablet {
             width: 100%;
         }
     }
     .product-attributes {
         display: inline-block;
-        float: left;
     }
 }
 
@@ -116,6 +115,7 @@
 
 .ecomproduct__image-link {
     background: no-repeat;
+    background-color: @color-swatch1;
 }
 
 // Product Information
@@ -140,7 +140,7 @@
 
 .ecomproduct__category-link,
 .ecomproduct__tag-link {
-    color: lighten(@color-swatch3,20%);
+    color: @color-swatch2;
 }
 
 .ecomproduct__select-wrap,
@@ -186,6 +186,13 @@
     }
 }
 
+.ecomproduct .product-attributes {
+    @media @tablet {
+        float: initial;
+    }
+}
+
+
 
 // -----------------------------
 // 2. #Product List
@@ -201,6 +208,10 @@
     }     
 }
 
+.ecomproductslist__listing-section {
+    margin-top: 30px;
+}
+
 .ecomproductslist__product-item-title,
 .ecomfeaturedproducts__product-item-title {
     display: inline-block;
@@ -212,6 +223,10 @@
 .ecomproductslist__listing-title {
     display: inline-block;
     border-bottom: 4px solid @color-swatch7;
+    @media @mtablet {
+        margin: 30px auto;
+        display: table;
+    }
     @media @mobile {
         text-align: center;
     }
@@ -278,6 +293,9 @@
 .product-item-image .image-link, .product-item-image {
     background-color: @color-swatch1;
     height: 350px;
+    @media @mobile {
+        height: 100%;
+    }
 }
 
 // Featured Products
@@ -296,6 +314,10 @@
     padding-bottom: 10px;
     display: inline-block;
     .clearfix;
+    @media @tablet {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .ecomcategorieslist__category-list {
@@ -308,6 +330,9 @@
     margin-right: 40px;
     &:last-child {
         margin-right: 0;
+    }
+    @media @tablet {
+        float: initial;
     }
 }
 
@@ -428,7 +453,28 @@
     border-bottom: 4px solid @color-swatch7;
     padding: 5px;
     border-top: 4px solid @color-swatch7;
+    @media @mobile {
+        border: 0;
+    }
 }
+
+.ecombasketsummary__message {
+    margin: 20px 0;
+    padding-left: 0;
+    @media @tablet {
+        &:before {
+            position: relative;
+        }
+    }
+}
+
+.ecombasketsummary__summary-section {
+    @media @tablet {
+        text-align: center;
+    }
+}
+
+
 
 
 // -------------------------------
@@ -474,6 +520,11 @@
 
 .ecomproductslist__listing-order {
     clear: both;
+    padding: 0 0 20px 0;
+}
+
+.ecomproductslist__form-body {
+    margin: 10px 0 0;
 }
 
 .product-filters .form-group {

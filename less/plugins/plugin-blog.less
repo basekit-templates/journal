@@ -31,7 +31,11 @@
     margin: 20px 0px 20px;
 }
 
-
+.blogsearch__form-group:nth-child(2) {
+    @media @mobile {
+        text-align: center;
+    }
+}
 
 
 // -------------------------------
@@ -101,6 +105,7 @@
 
 .blogpost__post-content {
     margin: 20px 0 0;
+    padding: 0;
 }
 
 .blogsearch__input {
@@ -169,11 +174,12 @@
         margin-top: 10px;
     }
     .timestamp {
-        display: inline-block;
         padding: 20px 0;
         margin: 0 auto;
         text-align: center;
         border-bottom: 4px solid @color-swatch7;
+        display: table;
+        margin-bottom: 40px;
     }
 }
 
@@ -222,12 +228,6 @@
  {
     position: relative;
     vertical-align: top;
-}
-
-.blogpost__post-content {
-    @media @tablet {
-        padding: 20px 20px 0 20px;
-    }
 }
 
 
