@@ -651,9 +651,8 @@
 // Navigation Buttons
 .slide-navigation {
     position: absolute;
+    top: 150px;
     width: 100%;
-    bottom: 43px;
-    margin-top: 0;
 }
 
 .previous-button {
@@ -672,19 +671,38 @@
     bottom: 0;
     margin: 0px auto;
     display: table;
-    width: 110px;
+    width: 100px;
+    background-color: rgba(0,0,0,0.15);
+    color: @color-swatch1;
+    border-radius: 0;
+    border: 0;
 }
 
 .responsiveslideshow__pause-toggle {
-    height: 40px;
-    top: -130px;
-    background-color: @color-swatch3;
-    border: 0;
-    border-radius: 0;
     &:before {
         margin-right: 0;
-        color: @font-swatch10-color;
     }
+}
+
+.responsiveslideshow__control-text {
+    display: none;
+}
+
+// Slideshow Pagination
+.responsiveslideshow__pagination-list {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button--pagination.responsiveslideshow__button {
+    vertical-align: top;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+}
+
+.responsiveslideshow .pagination-item.selected .button--pagination {
+    background-color: @color-swatch3;
+    color: @font-swatch8-color;
 }
 
 .responsiveslideshow__control-text {
@@ -851,7 +869,7 @@ input.input[type=search],
         margin-top: 32px;
         content: "";
     }
-    @media @tablet {
+    @media @mobile {
         text-align: center;
     }
 }
@@ -1031,9 +1049,6 @@ input.input[type=search],
     display: inline-block;
     margin-right: 2%;
     width: 80px;
-    @media @mobile {
-        display: none;
-    }
 }
 
 .twitter__account-link {
@@ -1125,6 +1140,12 @@ input.input[type=search],
 .signupform__form-group:nth-child(1),
 .signupform__form-group:nth-child(2) {
     margin-top: 10px;
+}
+
+.signupform__form-group:nth-child(2) {
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 .companyaddress__address-line {
