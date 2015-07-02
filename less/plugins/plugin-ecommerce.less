@@ -35,6 +35,11 @@
             color: #00aced;
             content: "";
         }
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin: 0px auto;
+        }
     }
     .product-header {
         border-bottom: 4px solid @color-swatch7;
@@ -344,6 +349,11 @@
     }
     @media @tablet {
         float: initial;
+    }
+    @media @mobile {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
     }
 }
 

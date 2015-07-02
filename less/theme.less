@@ -154,7 +154,7 @@ legend {
 
 .signupform__label,
 .blogsearch__legend {
-        &:before {
+    &:before {
         position: absolute;
         width: 118px;
         border-bottom: 4px solid #E4E4E4;
@@ -244,6 +244,14 @@ textarea,
 
 .blogsearch__legend {
     margin-bottom: 0;
+    @media @mobile {
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 5px auto;
+        &:before {
+            margin-top: 35px;
+        }
+    }
 }
 
 .signupform__fieldset {
