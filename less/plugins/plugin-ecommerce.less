@@ -223,7 +223,7 @@
 .ecomproductslist__listing-title {
     display: inline-block;
     border-bottom: 4px solid @color-swatch7;
-    @media @mtablet {
+    @media @tablet {
         margin: 30px auto;
         display: table;
     }
@@ -322,6 +322,13 @@
 
 .ecomcategorieslist__category-list {
     margin-left: 0;
+}
+
+.ecomcategorieslist__category-link {
+    &:hover {
+            text-decoration: none!important;
+    color: @font-swatch4-color!important;
+    }
 }
 
 .ecomcategorieslist__category-item {

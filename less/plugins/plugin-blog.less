@@ -176,10 +176,14 @@
     .timestamp {
         padding: 20px 0;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
         border-bottom: 4px solid @color-swatch7;
-        display: table;
+        display: inline-block;
         margin-bottom: 40px;
+        @media @mobile {
+            display: table;
+            text-align: center;
+        }
     }
 }
 
