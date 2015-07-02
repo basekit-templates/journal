@@ -171,6 +171,11 @@ legend {
 }
 
 .contactform__legend {
+    margin-bottom: 0;
+    @media @mobile {
+        text-align: center;
+        margin: 5px auto;
+    }
     &:before {
         width: 110px;
     }
@@ -235,7 +240,6 @@ textarea,
     border-bottom: 0;
     font-size: @font-swatch3-font-size;
     font-weight: @font-swatch3-font-weight;
-    margin-bottom: 30px;
 }
 
 .blogsearch__legend {
@@ -283,10 +287,6 @@ textarea,
 
 .blogsearch__form-group:nth-child(2) {
     margin-top: 0;
-}
-
-.contactform__legend {
-    margin-bottom: 0;
 }
 
 .signupform__input {
