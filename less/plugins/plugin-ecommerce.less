@@ -214,9 +214,12 @@
 
 .ecomproductslist__product-item-title,
 .ecomfeaturedproducts__product-item-title {
-    display: inline-block;
+    display: block;
+}
+
+.ecomproductslist__product-item-price {
     border-bottom: 4px solid @color-swatch7;
-    margin-bottom: 5px;
+    display: inline-block;
     padding-bottom: 5px;
 }
 
@@ -229,6 +232,7 @@
     }
     @media @mobile {
         text-align: center;
+        margin: 20px auto;
     }
 }
 
@@ -310,7 +314,7 @@
 
 // Category List
 .widget__ecomcategorieslist {
-    border-bottom: 4px solid @color-swatch3;
+    border-bottom: 4px solid @color-swatch7;
     padding-bottom: 10px;
     display: inline-block;
     .clearfix;
