@@ -104,6 +104,10 @@
     width: 100%;
     text-align: center;
     padding: 20px;
+    @media @mobile {
+        position: relative;
+        background-color: @color-swatch3;
+    }
 }
 
 .company-name {
@@ -214,11 +218,7 @@
     position: fixed;
     @media screen and (max-width: 1024px) {
         width: 100%;
-        position: relative;
-        height: 650px;
-    }
-    @media @mobile {
-        height: 500px;
+        position: relative; 
     }
 }
 

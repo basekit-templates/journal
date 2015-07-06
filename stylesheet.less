@@ -155,14 +155,17 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     p {
         color: @font-swatch9-color;
     }
     @media @mobile {
-        padding-bottom: 20px;
-    }
-    @media @mobile {
-        padding-bottom: 10px;
+        padding-top: 10px;
+        position: relative;
+        background-color: @color-swatch3;
+        margin-bottom: 0;
+        p {
+            padding-bottom: 0;
+        }
     }
 }
