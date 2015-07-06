@@ -43,8 +43,11 @@
 
 .widget__logo {
     margin-right: 10px;
+    max-height: 200px;
+    width: auto;
     @media @tablet {
         margin-right: 0;
+        max-height: 150px;
     }
 }
 
@@ -52,6 +55,21 @@
     @media @tablet {
         margin: 0px auto;
         display: table;
+    }
+}
+
+.logo__logo-link {
+    max-height: 200px;
+    @media @tablet {
+        max-height: 150px;
+    }
+}
+
+.logo__logo-image {
+    width: auto!important;
+    max-height: 200px;
+    @media @tablet {
+        max-height: 150px;
     }
 }
 

@@ -128,17 +128,17 @@
         },
         "font8": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
-            "font-size": "34px",
+            "font-size": "26px",
             "font-weight": "700",
-            "line-height": "42px",
+            "line-height": "36px",
             "color": "@color-swatch1",
             "letter-spacing": "3px"
         },
         "font9": {
             "font-family": "\"Merriweather\", Georgia, serif",
-            "font-size": "16px",
+            "font-size": "14px",
             "font-weight": "300",
-            "line-height": "30px",
+            "line-height": "28px",
             "color": "@color-swatch1",
             "letter-spacing": "3px"
         },
