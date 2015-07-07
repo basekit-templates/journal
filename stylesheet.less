@@ -180,11 +180,21 @@
         border: 0;
     }
     .signupform__form,
-    .signupform__legend,
-    .signupform__input  {
+    .signupform__legend {
         background-color: transparent;
     }
     .signupform__legend {
         text-align: center;
+        color: @font-swatch9-color;
+        padding-bottom: 0;
+        &:before {
+            border-bottom: 4px solid @color-swatch1;
+        }
+    }
+    .signupform__form-group {
+        margin-bottom: 0;
+    }
+    @media @mobile {
+        display: none;
     }
 }
