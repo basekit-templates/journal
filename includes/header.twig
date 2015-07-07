@@ -2,8 +2,7 @@
 <header>
     <div class="homepage-feature">
         <div class="company-header">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
         </div>
         {{widget('feature', 'featurehome', {
             "header": "profile", 

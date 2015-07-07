@@ -10,7 +10,7 @@
 }
 
 .navigation {
-    width: 59%;
+    width: 39%;
     display: inline-block;
     margin-bottom: 20px;
     @media screen and (max-width: 1024px) {
@@ -21,21 +21,25 @@
 }
 
 .navigation-widget-profile {
-  width: 40.7%;
+  width: 60.6%;
   display: inline-block;
   text-align: right;
   float: right;
   .clearfix;
     @media screen and (max-width: 1024px) {
+        display: inline-block;
+    }
+    @media @tablet {
         width: 100%;
-        display: block;
-        text-align: center;
-        margin-bottom: 20px;
     }
 }
 
 .navigation-container {
+    width: 39%;
     .clearfix;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .navigation-widget-profile .twitter__tweet-item {
@@ -53,9 +57,6 @@
 .navigation-list {
 	min-width: 220px;
 	margin: 0;
-    @media screen and (max-width: 1024px) {
-        text-align: center;
-    }
 }
 
 

@@ -48,6 +48,7 @@
     @media @tablet {
         margin-right: 0;
         max-height: 150px;
+        margin-bottom: 10px;
     }
 }
 
@@ -122,9 +123,12 @@
     width: 100%;
     text-align: center;
     padding: 20px;
-    @media @mobile {
-        position: relative;
-        background-color: @color-swatch3;
+}
+
+.widget__companyname {
+    @media @tablet {
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -922,14 +926,14 @@ input.input[type=search],
 }
 
 .socialicons__social-item {
-  border-radius: 20px;
-  padding: 0 10px;
-}
+    border-radius: 20px;
+    padding: 0 10px;
+} 
 
 .widget .profile {
     .socialicons__social-item {
-  padding: 0!important;
-}
+        padding: 0!important;
+    }
 }
 
 .socialicons__social-item:hover {
@@ -988,6 +992,20 @@ input.input[type=search],
 
 .icon--dropbox:before {
     color: #3d9ae8;
+}
+
+
+//Company Header Social Icons
+.company-header .social-social-link {
+    color: white;
+}
+
+.company-header .social-list {
+    max-width: 80%;
+    margin: 0px auto;
+    @media @mobile {
+        max-width: 100%;
+    }
 }
 
 

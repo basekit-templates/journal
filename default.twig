@@ -6,12 +6,15 @@
 <div class="right-section">
 	<div class="container">
 		<div class="navigation-container">
-			<div class="navigation">
-			    {{widget('extendednavigation', 'extendednavigation', {"align":"left"})|raw}}
+			<div class="logo-container">
+			    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
 			</div>
-			    <div class="navigation-widget-profile">
-			    	{{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-			    </div>
+				<div class="companyname-container">
+            		{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            	</div>
+			</div>
+			<div class="navigation-widget-profile">
+			    {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
 			</div>
 			
 			<!-- Container -->
