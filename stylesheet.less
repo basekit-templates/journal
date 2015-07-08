@@ -170,6 +170,7 @@
     width: 100%;
     text-align: center;
     padding: 2% 5%;
+    z-index: 999;
     p, a, h1, h2, h3, h4, .social-social-link  {
         color: @font-swatch9-color;
     }
@@ -186,13 +187,17 @@
     .signupform__legend {
         text-align: center;
         color: @font-swatch9-color;
-        padding-bottom: 0;
+        padding-bottom: 10px;
         &:before {
             border-bottom: 4px solid @color-swatch1;
         }
     }
     .signupform__form-group {
         margin-bottom: 0;
+    }
+    .twitter__timestamp,
+    .twitter-feed__via {
+        color: @color-swatch2;
     }
     @media @mobile {
         display: none;
