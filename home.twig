@@ -6,20 +6,19 @@
 
 <div class="right-section">
 	<div class="container">
-	<div class="header-container">
-		<div class="navigation-container">
-			<div class="logo-container">
-			    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+		<div class="header-container clearfix">
+			<div class="navigation-container">
+				<div class="logo-container">
+				    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+				</div>
+				<div class="companyname-container">
+    	        	{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+    	        </div>
 			</div>
-			<div class="companyname-container">
-            	{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-            </div>
+			<div class="navigation-widget-profile">
+			    {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
+			</div>
 		</div>
-		<div class="navigation-widget-profile">
-		    {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
-		</div>
-
-	</div>
 			
 			<!-- Container -->
 			
