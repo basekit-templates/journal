@@ -141,26 +141,6 @@ legend {
 	background-color: @color-swatch1;
 	color: @font-swatch4-color;
     padding-bottom: 20px;
-    &:before {
-        position: absolute;
-        width: 38px;
-        border-bottom: 4px solid #E4E4E4;
-        margin-top: 32px;
-        color: #00aced;
-        content: "";
-    }
-}
-
-.signupform__label,
-.blogsearch__legend {
-    &:before {
-        position: absolute;
-        width: 118px;
-        border-bottom: 4px solid #E4E4E4;
-        margin-top: 32px;
-        color: #00aced;
-        content: "";
-    }
 }
 
 .signupform__label {
@@ -267,36 +247,6 @@ textarea,
     @media @mobile {
         text-align: left;
     }
-}
-
-.blogsearch__form-group:nth-child(1) {
-    display: inline-block;
-    float: left;
-    width: 50%;
-    height: 40px;
-    @media @mobile {
-        width: 100%;
-        float: initial;
-        display: block;
-    }
-}
-
-.blogsearch__form-group:nth-child(2) {
-    display: inline-block;
-    float: left;
-    width: 40%;
-    text-align: left;
-    margin-left: 5px;
-    @media @mobile {
-        width: 100%;
-        float: initial;
-        display: block;
-        margin-top: 0;
-    }
-}
-
-.blogsearch__form-group:nth-child(2) {
-    margin-top: 0;
 }
 
 .signupform__input {
