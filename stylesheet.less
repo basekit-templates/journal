@@ -97,28 +97,6 @@
 // #Default Page Sticky Footer
 // ------------------------------------------
 
-.bk-pt-default {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;    
-    min-height: 100vh;
-    flex-direction: column;
-     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-}
-
-.bk-pt-default .container {
-    flex: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    width: 100%;
-}
-
 .navigation-container, 
 .logo-container, 
 .companyname-container {
@@ -168,6 +146,9 @@
 
 .bk-pt-default .container {
     width: 60%;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .template-content {
