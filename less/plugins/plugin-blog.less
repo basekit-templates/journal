@@ -28,6 +28,10 @@
     display: inline-block;
     float: left;
     margin-right: 10px;
+    @media @mobile {
+        padding-bottom: 10px;
+        width: 100%;
+    }
 }
 
 .blogsearch__label {
@@ -42,7 +46,7 @@
     @media @mobile {
         width: 100%;
         float: initial;
-        display: block;
+        display: table;
     }
 }
 
@@ -58,7 +62,6 @@
         display: block;
         margin-left: 0;
         text-align: center;
-        margin-top: 90px;
     }
 }
 
