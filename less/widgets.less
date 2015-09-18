@@ -124,6 +124,7 @@
 }
 
 .company-link {
+    color: @color__link--text;
     @media @tablet {
         font-size: bkscale(@font-swatch10-font-size,0.8);
         line-height: bkscale(@font-swatch10-line-height,0.8);
@@ -284,6 +285,7 @@
 // ---------------
 
 .feature__headline {
+    color: @color__feature-headline--text;
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.8);
@@ -295,6 +297,7 @@
 }
 
 .feature__strapline {
+    color: @color__feature-strapline--text;
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.9);
@@ -311,8 +314,8 @@
 
 .feature__button { 
     margin: 10px 0 0 0; 
-    border: 1px solid @color-swatch1;
-    color: @font-swatch8-color;
+    border: 1px solid @color__feature-button--border;
+    color: @color__feature-button--text;
 }
 
 // Default Page Feature
@@ -702,11 +705,6 @@
     margin-bottom: 5px;
 }
 
-.responsiveslideshow .pagination-item.selected .button--pagination {
-    background-color: @color-swatch3;
-    color: @font-swatch8-color;
-}
-
 .responsiveslideshow__control-text {
     display: none;
 }
@@ -730,10 +728,11 @@
     }
 }
 
-.responsiveslideshow .pagination-item.selected .button--pagination {
+.responsiveslideshow .pagination-item.selected .button--pagination,
+.button--pagination.responsiveslideshow__button:hover {
     background-color: transparent;
-    color: @font-swatch7-color;
-    border-bottom: 4px solid @color-swatch7;
+    border-bottom: 4px solid @color__slideshow-pagination-item--text--selected;
+    color: darken(@color__slideshow-pagination-item--text, 25%);
 }
 
 
@@ -746,27 +745,20 @@
 //  8.1  #STANDARD
 //  --------------
 
-.feature__button {
-    border: 1px solid @color-swatch1;
-    background-color: transparent;
+button.feature__button {
+    border: 1px solid @color__feature-button--border;
+    background-color: @color__feature-button--background;
     padding: 5px 30px;
-    color: @font-swatch9-color;
+    color: @color__feature-button--text;
     margin: 10px 0 0 0; 
     &:hover {
         border: 1px solid transparent;
+        background-color: @color__feature-button--background--hover;
     }
 }
 
 //  8.2  #TWEET
 //  --------------
-
-.tweet__button {
-    background-color: transparent!important;
-    &:hover {
-        background-color: @color-swatch3!important;
-        color: @font-swatch7-color!important;
-    }
-}
 
 .icon--twitter.tweet__button {
     color: #00aced;
@@ -909,22 +901,16 @@ input.input[type=search],
 
 .socialicons__social-item:hover {
     text-decoration: none;
-    background-color: red;
-    span {
-        color: @font-swatch9-color;
-    }
 }
 
 .socialicons__social-item a:hover {
-    background-color: transparent!important;
+    background-color: @font-swatch7-color-hover;!important;
     text-decoration: none;
-    color: @color-swatch2!important;
 }
 
 .social-social-link {
     border-radius: 30px;
     padding: 7px 12px;
-    color: @font-swatch6-color;
     font-size: @font-swatch7-font-size;
     display: inline-block;
 }

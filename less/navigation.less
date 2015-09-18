@@ -77,7 +77,12 @@
 
 // Navigation Link
 .navigation-item .item-name {
+    color: @color__navigation--text;
 	padding: 5px 15px;
+
+    &:hover {
+        color: @color__navigation--text--hover;
+    }
 }
 
 .item-name {
@@ -87,11 +92,11 @@
 
 // Selected
 .extendednavigation__item-name.selected {
-    color: @font-swatch4-color;
+    color: @color__navigation--text--selected;
 }
 
 .extendednavigation .navigation-item.selected > .item-name {
-    color: @font-swatch4-color;
+    color: @color__navigation--text--selected;
 }
 
 
@@ -103,7 +108,7 @@
 
 .navigation-item.folder .navigation__item-name {
 	&:hover {
-		color: @font-swatch4-color;
+		color: @color__navigation--text--hover;
 	}
 }
 
@@ -138,12 +143,12 @@
 }
 
 .navigation-list--children, .default-page .navigation-list--children {
-	background-color:@color-swatch1;
+	background-color: @color-swatch1;
 	border: 1px solid @color-swatch7;
     white-space: normal;
     padding: 5px 0;
 	.navigation__item-name {
-		color:@font-swatch9-color;
+		color: @color__navigation--text;
 	}
 	@media @tablet {
 		position: relative;

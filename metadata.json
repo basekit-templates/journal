@@ -150,5 +150,99 @@
             "color": "@color-swatch3",
             "letter-spacing": "3px"
         }
+    },
+    "styles": {
+        "colors": {
+            "color__primary": "@color-swatch3",
+            "color__secondary": "@color-swatch2"
+        },
+        "site": {
+            "color__body--background": "@color-swatch1",
+            "color__link--text": "@color__primary",
+            "color__companyname--text": "@color__primary"
+        },
+        "typography": {
+            "color__h1--text": "@font-swatch1-color",
+            "color__h1--background": "transparent",
+            "color__h2--text": "@font-swatch2-color",
+            "color__h2--background": "transparent",
+            "color__h3--text": "@font-swatch3-color",
+            "color__h3--background": "transparent",
+            "color__h4--text": "@font-swatch4-color",
+            "color__h4--background": "transparent",
+            "color__p--text": "@font-swatch5-color",
+            "color__p--background": "transparent"
+        },
+        "button": {
+            "color__button--background": "transparent",
+            "color__button--background--hover": "@color__primary",
+            "color__button--border": "@color-swatch7",
+            "color__button--text": "@color__primary",
+            "color__button--text--hover": "@color-swatch1;"
+        },
+        "sidebar": {
+            "color__sidebar--background": "transparent"
+        },
+        "navigation": {
+            "color__navigation--text": "@color__primary",
+            "color__navigation--text--hover": "@font-swatch4-color",
+            "color__navigation--text--selected": "@font-swatch4-color",
+            "color__navigation-list--background": "@color-swatch1"
+        },
+        "feature": {
+            "color__feature--background": "transparent",
+            "color__feature-content--background": "transparent",
+            "color__feature-headline--text": "@font-swatch9-color",
+            "color__feature-headline--background": "transparent",
+            "color__feature-strapline--text": "@font-swatch9-color",
+            "color__feature-strapline--background": "transparent",
+            "color__feature-button--text": "@font-swatch9-color",
+            "color__feature-button--background": "transparent",
+            "color__feature-button--background--hover": "@color__primary",
+            "color__feature-button--border": "@font-swatch9-color"
+        },
+        "forms": {
+            "color__form-legend--text": "@color-swatch4",
+            "color__form-label--text": "@color-swatch4"
+        },
+        "image": {
+            "color__image--background": "transparent",
+            "color__image-caption--background": "transparent",
+            "color__image-title--text": "@font-swatch2-color",
+            "color__image-description--text": "@font-swatch5-color"
+        },
+        "gallery": {
+            "color__gallery--background": "transparent",
+            "color__gallery-caption--background": "fade(@color-swatch4, 65%)",
+            "color__gallery-title--text": "@color-swatch1",
+            "color__gallery-description--text": "darken(@color-swatch1, 15%)"
+        },
+        "slideshow": {
+            "color__slideshow--background": "transparent",
+            "color__slideshow-caption--background": "fade(@color-swatch1, 65%)",
+            "color__slideshow-title--text": "@color-swatch1",
+            "color__slideshow-description--text": "darken(@color-swatch1, 20%)",
+            "color__slideshow-pagination-item--text--selected": "@color-swatch7",
+            "color__slideshow-pagination-item--text": "@color-swatch7"
+        },
+        "socialicons": {
+            "color__socialicons--icon": "@color-swatch1",
+            "color__socialicons--icon--background": "@color__primary",
+            "color__socialicons--text": "@font-swatch7-color"
+        },
+        "blog": {
+            "color__blogsearch-legend--text": "@color__form-legend--text",
+            "color__blogpostlist-title--text": "@color-swatch4",
+            "color__blogpost-title--text": "@color-swatch4"
+        },
+        "ecommerce": {
+            "color__ecomproductslist-product-title--text": "@color-swatch4",
+            "color__ecomproduct-title--text": "@font-swatch4-color",
+            "color__ecomproduct-price--text": "@color__secondary",
+            "color__ecombasket-button--background": "@color__button--background"
+        },
+        "menu": {
+            "color__menusections--border": "fade(@color__secondary, 25%)"
+        }
     }
 }
