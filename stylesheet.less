@@ -23,10 +23,12 @@
 //    your template to guarentee widgets come to life. Proivides default styles for all widgets.
 
 // Template Includes
+@import "@{templateLocal}/less/typography.less"; // Theme
 @import "@{templateLocal}/less/theme.less"; // Theme
 @import "@{templateLocal}/less/widgets.less"; // Widgets
 @import "@{templateLocal}/less/mixins.less"; // Mixins
 @import "@{templateLocal}/less/navigation.less"; // Navigation
+
 
 // Plugin Includes
 @import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
@@ -47,6 +49,7 @@
 // --------------
 
 body {
+    background-color: @color__body--background;
     min-height: 100vh;
 }
 
