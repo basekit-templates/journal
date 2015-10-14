@@ -229,9 +229,6 @@
             "color__ecomproduct-title--text": "@font-swatch4-color",
             "color__ecomproduct-price--text": "@color__secondary",
             "color__ecombasket-button--background": "@color__button--background"
-        },
-        "menu": {
-            "color__menusections--border": "fade(@color__secondary, 25%)"
         }
     }
 }
