@@ -259,10 +259,6 @@
             "color__slideshow-pagination-item--text--selected": "@color__primary",
             "color__slideshow-pagination-item--text": "@font-swatch4-color"
         },
-        "socialicons": {
-            "color__socialicons--icon--background": "transparent",
-            "color__socialicons--text": "@font-swatch7-color"
-        },
         "blog": {
             "color__blogpostlist-title--text": "@color-swatch4",
             "color__blogpost-title--text": "@color-swatch4"
