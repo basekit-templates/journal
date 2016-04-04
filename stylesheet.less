@@ -17,9 +17,9 @@
 // 1. #LESS Includes
 // -----------------------------
 
-@import "@{templateCommon}/bk-less-framework.less"; // BaseKit LESS Framework 
+@import "@{templateCommon}/bk-less-framework.less"; // BaseKit LESS Framework
 
-// ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into 
+// ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into
 //    your template to guarentee widgets come to life. Proivides default styles for all widgets.
 
 // Template Includes
@@ -105,8 +105,8 @@ body {
 // #Default Page Sticky Footer
 // ------------------------------------------
 
-.navigation-container, 
-.logo-container, 
+.navigation-container,
+.logo-container,
 .companyname-container {
     display: inline-block;
     @media @tablet {
@@ -206,6 +206,11 @@ body {
         color: @color-swatch2;
     }
     @media @mobile {
-        display: none;
+        border-bottom: 1px solid lighten(@color-swatch5, 65%);
+        position: relative;
+
+        .social-social-link {
+            color: @color-swatch5;
+        }
     }
 }
