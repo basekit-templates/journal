@@ -206,11 +206,15 @@ body {
         color: @color-swatch2;
     }
     @media @mobile {
-        border-bottom: 1px solid lighten(@color-swatch5, 65%);
+        border-bottom: 1px solid lighten(@color-swatch5, 50%);
         position: relative;
 
         .social-social-link {
-            color: @color-swatch5;
+            color: @color-swatch4;
+
+            &:hover {
+                color: @color-swatch4;
+            }
         }
     }
 }
