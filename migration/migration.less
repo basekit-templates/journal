@@ -1,0 +1,107 @@
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+    // Stylseheet overrides
+    // -----------------------------
+    // Template wrapper (replace with corresponding template classes)
+    .right-section {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    // Widget overflow to allow 10S overlays to display correctly
+    .widget.content {
+        overflow: inherit;
+    }
+
+    &.edit {
+        .homepage-feature {
+            @media screen and (min-width: 1025px) {
+                width: ~'calc(calc(100% - 200px) * 0.4)';
+            }
+        }
+    }
+
+
+    // Migration styles
+    // -----------------------------
+    // Replace with corresponding template values
+    @spacing__first--tablet: 30px;
+    @spacing--other: 30px;
+
+    .header-container {
+        margin-left: @spacing__first--tablet;
+        margin-right: @spacing__first--tablet;
+    }
+
+
+    // Applies spacing to widgets to mimic container width
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    [data-name="row"]:not(.row--width-no-padding) .row__container {
+        padding-left: @spacing__first--tablet;
+        padding-right: @spacing__first--tablet;
+        width: 100%;
+    }
+
+
+    // Move spacing to first widget in the main zone (not sections)
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: @spacing__first--mobile;
+    }
+
+
+    // Add spacing to the top of a widget when it follows a section
+    #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]) {
+        margin-top: @spacing--other;
+    }
+
+
+    // Remove spacing if widget follows a light section (change to dark if template has a dark BG)
+    #page-zones__main > [data-name="row"].style--light + .widget:not([data-name="row"]) {
+        margin-top: 0;
+    }
+
+    // Adds spacing to the section when a widget is before it
+    #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"] {
+        margin-top: @spacing--other;
+    }
+
+    #page-zones__main > [data-name="row"]:last-child {
+        margin-bottom: 0;
+    }
+
+    #page-zones__main > .widget:not([data-name="row"]):last-child {
+        margin-bottom: 10px;
+    }
+
+    // fix row overlay controls
+    .row-overlay:before,
+    .row-overlay:after {
+        background: none !important;
+    }
+
+    .row-overlay:after {
+        background-image: linear-gradient(to left, transparent , #e8e8e8) !important;
+    }
+
+    [data-name="row"] [class^=bk-socialicons] a {
+        padding: 5px;
+    }
+
+    [data-name="row"] .social-name {
+        padding-right: 5px;
+    }
+
+    .widget__twitter:before {
+        right: 30px;
+    }
+}
+
+// End of #migrated-site

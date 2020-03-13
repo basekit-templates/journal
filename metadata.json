@@ -1,5 +1,6 @@
 {
     "name":"Journal",
+    "versionTenCompatible": 1,
     "thumbnail":"journal.png",
     "screenshot":"journal-screenshot.jpg",
     "tags": {
